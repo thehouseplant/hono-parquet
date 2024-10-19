@@ -5,7 +5,6 @@
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "@dsnp/parquetjs": "^1.8.5",
     "duckdb": "^1.1.1",
     "hono": "^4.6.5"
   },
