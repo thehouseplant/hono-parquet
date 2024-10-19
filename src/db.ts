@@ -5,5 +5,5 @@ export function initializeDatabase(db: Database): void {
 }
 
 export const QUERIES = {
-  allEmployees: `SELECT * FROM 'data.parquet`,
+  allEmployees: `SELECT * FROM './data/university-of-california-2023.parquet`,
 };
