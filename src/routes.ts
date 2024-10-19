@@ -1,21 +1,7 @@
 import { Hono, type Context } from "hono";
 import { Database } from "duckdb";
 import { QUERIES } from "./db";
-
-interface Employee {
-  employee_name: string;
-  job_title: string;
-  base_pay: number;
-  overtime_pay: number;
-  other_pay: number;
-  benefits: number;
-  total_pay: string;
-  total_pay_and_benefits: string;
-  year: number;
-  notes: string;
-  agency: string;
-  status: string;
-}
+import { Employee } from "./models";
 
 export function setupRoutes(app: Hono, db: Database): void {
   app.get("/", (c) => c.text("DuckDB Hono API entrypoint"));
